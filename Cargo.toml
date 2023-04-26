@@ -1,0 +1,15 @@
+[package]
+name = "start-rustlings"
+version = "0.1.0"
+description = "Start rustlings using a devcontainer"
+documentation = "https://github.com/ndunnett/start-rustlings"
+homepage = "https://github.com/ndunnett/start-rustlings"
+repository = "https://github.com/ndunnett/start-rustlings"
+readme = "README.md"
+license-file = "LICENSE"
+edition = "2021"
+rust-version = "1.69"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

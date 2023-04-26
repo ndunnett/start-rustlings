@@ -1,0 +1,29 @@
+{
+  "name": "rustlings",
+  "image": "mcr.microsoft.com/devcontainers/rust:bullseye",
+  "hostRequirements": {
+    "cpus": 1,
+    "memory": "1gb",
+    "storage": "1gb"
+  },
+  "onCreateCommand": {
+    "clone-rustlings": "git clone --depth 1 https://github.com/rust-lang/rustlings"
+  },
+  "updateContentCommand": {
+    "install-rustlings": "cargo install --force --path rustlings"
+  },
+  "postCreateCommand": {
+    "setup-rust-analyzer": "cd rustlings && rustlings lsp"
+  },
+  "postAttachCommand": {
+    "server": "rustlings watch"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "rust-lang.rust-analyzer"
+      ]
+    }
+  }
+}
